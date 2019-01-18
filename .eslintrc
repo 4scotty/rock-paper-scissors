@@ -1,0 +1,14 @@
+---
+root: true
+extends:
+- standard
+rules:
+  #todo: temporarily turned off
+  no-case-declarations: 0
+  no-console: 0
+  no-invalid-this: 0
+  no-unused-expressions: 0
+  require-jsdoc: 0
+
+  #disable react directives
+  react/prop-types: 0
