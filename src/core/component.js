@@ -10,6 +10,15 @@ export class Component {
     }
 
     /**
+     * Bind event handler
+     * @param {Function} handler
+     * @returns {string}
+     */
+    bind(handler) {
+        return Container.get('mediator').bind(handler);
+    }
+
+    /**
      * Render method
      * @abstract
      * @returns {string}

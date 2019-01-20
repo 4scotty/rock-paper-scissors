@@ -4,6 +4,8 @@ import {actionGameStart} from 'actions/game';
 export class IndexLayout extends Component {
     constructor(props) {
         super(props);
+
+        this.onClick = this.bind(this.props.onClick);
     }
 
     static mapStateToProps(store) {
@@ -19,7 +21,7 @@ export class IndexLayout extends Component {
     render() {
         return `
             <h1>${this.props.start}</h1>
-            <a href="#">Click me!</a>
+            <a href="#" onclick="${this.onClick}">Click me!</a>
         `;
     }
 }

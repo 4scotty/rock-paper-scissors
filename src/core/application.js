@@ -1,4 +1,5 @@
 import {Container} from './container';
+import {Mediator} from './mediator';
 
 export class Application {
     /**
@@ -8,7 +9,9 @@ export class Application {
     constructor(store) {
         this.store = store;
         this.store.connect(() => this.update());
+
         Container.set('store', this.store);
+        Container.set('mediator', new Mediator());
     }
 
     /**
