@@ -49,7 +49,6 @@ export class Component {
                 ...this.mapDispatchToProps(store.getDispatch()),
                 ...props || {}
             });
-        console.log(store, this.mapStateToProps(store.getStore()));
 
         return component.render();
     }

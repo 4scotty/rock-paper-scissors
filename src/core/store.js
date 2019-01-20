@@ -76,7 +76,6 @@ export class Store {
     setState(key, state) {
         if (state && state !== this.store[key]) {
             this.store[key] = state;
-            console.log(this.store);
             this.cb();
         }
     }
