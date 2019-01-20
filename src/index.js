@@ -1,9 +1,11 @@
-import {Component} from 'core';
+import {Application, Store} from 'core';
+import {IndexLayout} from 'layouts';
+import reducer from 'reducers';
 
-class Widget extends Component {
+const store = new Store(reducer, []),
+    application = new Application(store);
 
-}
-
-console.log(Widget.createComponent({aaa: 123}));
-
-console.log('***');
+application.render(
+    () => IndexLayout.createComponent(),
+    document.getElementById('root')
+);
