@@ -72,8 +72,6 @@ module.exports = {
             actions: path.resolve('./src/actions'),
             assets: path.resolve('./src/assets'),
             components: path.resolve('./src/components'),
-            configs: path.resolve('./src/configs'),
-            containers: path.resolve('./src/containers'),
             core: path.resolve('./src/core'),
             layouts: path.resolve('./src/layouts'),
             middleware: path.resolve('./src/middleware'),
