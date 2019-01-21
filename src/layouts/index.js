@@ -1,27 +1,23 @@
 import {Component} from 'core';
-import {actionGameStart} from 'actions/game';
+
+import {WelcomeLayout} from './welcome';
+import {GameLayout} from './game';
 
 export class IndexLayout extends Component {
     constructor(props) {
         super(props);
-
-        this.onClick = this.bind(this.props.onClick);
     }
 
     static mapStateToProps(store) {
         return store.game;
     }
 
-    static mapDispatchToProps(dispatch) {
-        return {
-            onClick: () => dispatch(actionGameStart())
-        };
-    }
-
     render() {
+        const {start} = this.props;
+
         return `
-            <h1>${this.props.start}</h1>
-            <a href="#" onclick="${this.onClick}">Click me!</a>
+            <h1>${start}</h1>
+            ${start ? GameLayout.createComponent() : WelcomeLayout.createComponent()}
         `;
     }
 }
