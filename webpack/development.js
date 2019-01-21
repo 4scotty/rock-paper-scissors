@@ -74,6 +74,7 @@ module.exports = {
             components: path.resolve('./src/components'),
             core: path.resolve('./src/core'),
             layouts: path.resolve('./src/layouts'),
+            models: path.resolve('./src/models'),
             modules: path.resolve('./src/modules'),
             reducers: path.resolve('./src/reducers')
         },

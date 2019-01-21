@@ -1,12 +1,12 @@
 import './style.scss';
 import {Component} from 'core';
 
-export class Turn extends Component {
+export class Winner extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
-        return `<i>${this.props.turn || ''}</i>`;
+        return `<strong>${this.props.winner ? 'WON!' : ''}</strong>`;
     }
 }
