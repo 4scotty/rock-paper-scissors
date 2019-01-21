@@ -77,7 +77,7 @@ module.exports = {
             components: path.resolve('./src/components'),
             core: path.resolve('./src/core'),
             layouts: path.resolve('./src/layouts'),
-            middleware: path.resolve('./src/middleware'),
+            modules: path.resolve('./src/modules'),
             reducers: path.resolve('./src/reducers')
         },
         extensions: [

@@ -20,8 +20,6 @@ export class Observer {
                 handler = this.registry.get(type);
 
             if (handler && typeof handler === 'function') handler({store, dispatch, action});
-
-            dispatch(action);
         };
     }
 
