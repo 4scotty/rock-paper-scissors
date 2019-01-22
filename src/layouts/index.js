@@ -16,7 +16,7 @@ export class IndexLayout extends Component {
         const {start} = this.props;
 
         return `
-            <h1>${start}</h1>
+            <h1>Rock-Paper-Scissors</h1>
             ${start ? GameLayout.createComponent() : WelcomeLayout.createComponent()}
         `;
     }
