@@ -14,7 +14,7 @@ module.exports = {
 
     output: {
         filename: '[name].[hash].min.js',
-        path: path.resolve('./dist'),
+        path: path.resolve('./docs'),
         publicPath: '/'
     },
 
@@ -87,13 +87,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve('./src/assets/index.html'),
             favicon: path.resolve('./src/assets/favicon.png'),
-            filename: path.resolve('./dist/index.html')
+            filename: path.resolve('./docs/index.html')
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
 
     devServer: {
-        contentBase: path.resolve('./dist'),
+        contentBase: path.resolve('./docs'),
         host: '0.0.0.0',
         port: 9000,
         publicPath: '/',

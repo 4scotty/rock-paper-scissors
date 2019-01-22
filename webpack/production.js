@@ -17,7 +17,7 @@ module.exports = {
 
     output: {
         filename: '[name].[hash].min.js',
-        path: path.resolve('./dist'),
+        path: path.resolve('./docs'),
         publicPath: '.'
     },
 
@@ -87,14 +87,14 @@ module.exports = {
     },
 
     plugins: [
-        new CleanWebpackPlugin(['dist'], {
+        new CleanWebpackPlugin(['docs'], {
             root: path.resolve('.'),
             exclude: ['.readme.md']
         }),
         new HtmlWebpackPlugin({
             template: path.resolve('./src/assets/index.html'),
             favicon: path.resolve('./src/assets/favicon.png'),
-            filename: path.resolve('./dist/index.html'),
+            filename: path.resolve('./docs/index.html'),
             minify: {
                 collapseWhitespace: true
             }

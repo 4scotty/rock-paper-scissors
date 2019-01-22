@@ -43,7 +43,7 @@ yarn test # run test suites
 To start building the project type:
 
 ```shell
-yarn build # prepare dist in `./dist` folder
+yarn build # prepare dist in `./docs` folder
 ```
 
 To prepare a Docker container and publish it to registry:
