@@ -9,10 +9,10 @@
 ## Compatibility
 
 Default target browsers are defined via `browserlist`:
-* > 1%
+* \> 1%
 * last 2 versions
 
-Full list of supported browsers here: [https://browserl.ist/?q=%3E+1%25%2C+last+2+versions]
+Full list of supported browsers here: https://browserl.ist/?q=%3E+1%25%2C+last+2+versions
 
 ## Development
 
@@ -23,7 +23,7 @@ Development mode supports pre-linting and auto-compilation with live-reload.
 yarn start
 ```
 
-2) open in browser [`http://0.0.0.0:9000`]
+2) open in browser `http://0.0.0.0:9000`
 
 3) enjoy!
 
@@ -52,7 +52,7 @@ To prepare a Docker container and publish it to registry:
 yarn docker
 ```
 
-Then to run it in dev mode e.g. with port `8888` (just open in browser URL [`http://0.0.0.0:8888`] then):
+Then to run it in dev mode e.g. with port `8888` (just open in browser URL `http://0.0.0.0:8888` then):
 
 ```shell
 docker run -it --rm -p 8888:80 rock-paper-scissors ash
