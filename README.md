@@ -4,6 +4,7 @@
 
 * Node.js: v10.15.0+
 * Yarn: v1.3.0+
+* Docker: v1.12.3+
 
 ## Compatibility
 
@@ -22,7 +23,7 @@ Development mode supports pre-linting and auto-compilation with live-reload.
 yarn start
 ```
 
-2) open in browser `http://0.0.0.0:9000`
+2) open in browser [`http://0.0.0.0:9000`]
 
 3) enjoy!
 
@@ -43,6 +44,18 @@ To start building the project type:
 
 ```shell
 yarn build # prepare dist in `./dist` folder
+```
+
+To prepare a Docker container and publish it to registry:
+
+```shell
+yarn docker
+```
+
+Then to run it in dev mode e.g. with port `8888` (just open in browser URL [`http://0.0.0.0:8888`] then):
+
+```shell
+docker run -it --rm -p 8888:80 rock-paper-scissors ash
 ```
 
 ## Known issues
